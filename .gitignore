@@ -22,3 +22,6 @@ logs/
 
 #Prettier
 .prettierrc
+
+#.vscode
+/.vscode/
