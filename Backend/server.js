@@ -122,8 +122,8 @@ export default app;
 
 // Only start server if this file is run directly (not imported in tests)
 if (process.env.NODE_ENV !== "test") {
-  server = app.listen(PORT, () => {
-    logger.info(`🚀 Server running on http://localhost:${PORT}`, {
+  server = app.listen(PORT, "0.0.0.0", () => {
+    logger.info(`🚀 Server running on http://0.0.0.0:${PORT}`, {
       environment: process.env.NODE_ENV || "development",
       port: PORT,
     });

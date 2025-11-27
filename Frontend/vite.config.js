@@ -6,5 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     sourcemap:false,
-  }
+  },
+   server: {
+host: true,
+port: 5173,
+allowedHosts: true
+}
 })
