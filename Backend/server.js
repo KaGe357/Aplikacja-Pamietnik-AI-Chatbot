@@ -13,6 +13,9 @@ import db from "./config/database.js";
 dotenv.config();
 const app = express();
 
+// Trust proxy (nginx)
+app.set('trust proxy', 1);
+
 // Security: hide Express fingerprint and apply common security headers
 app.disable("x-powered-by");
 app.use(helmet());
